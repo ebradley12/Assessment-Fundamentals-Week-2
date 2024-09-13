@@ -1,24 +1,16 @@
 ============================= test session starts ==============================
 platform linux -- Python 3.12.5, pytest-8.3.3, pluggy-1.5.0
 rootdir: /home/runner/work/Assessment-Fundamentals-Week-2/Assessment-Fundamentals-Week-2
-collected 15 items / 1 error
+collected 23 items
 
-!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
-=============================== 1 error in 0.12s ===============================
+Level-1/test_one_task.py .........                                       [ 39%]
+Level-2/test_two_task.py ......                                          [ 65%]
+Level-3/test_three_task.py ........                                      [100%]
+
+============================== 23 passed in 0.04s ==============================
 ************* Module task_one
 Level-1/task_one.py:12:45: W0622: Redefining built-in 'type' (redefined-builtin)
-************* Module task_three
-Level-3/task_three.py:1:0: C0114: Missing module docstring (missing-module-docstring)
-Level-3/task_three.py:17:0: C0115: Missing class docstring (missing-class-docstring)
-Level-3/task_three.py:17:0: R0903: Too few public methods (0/2) (too-few-public-methods)
-Level-3/task_three.py:25:0: C0115: Missing class docstring (missing-class-docstring)
-Level-3/task_three.py:27:23: W0621: Redefining name 'questions' from outer scope (line 41) (redefined-outer-name)
-Level-3/task_three.py:27:51: W0622: Redefining built-in 'type' (redefined-builtin)
-Level-3/task_three.py:25:0: R0903: Too few public methods (0/2) (too-few-public-methods)
-Level-3/task_three.py:33:0: C0115: Missing class docstring (missing-class-docstring)
-Level-3/task_three.py:35:23: W0621: Redefining name 'quiz' from outer scope (line 48) (redefined-outer-name)
-Level-3/task_three.py:33:0: R0903: Too few public methods (0/2) (too-few-public-methods)
 
 ------------------------------------------------------------------
-Your code has been rated at 9.06/10 (previous run: 9.06/10, +0.00)
+Your code has been rated at 9.95/10 (previous run: 9.95/10, +0.00)
 
