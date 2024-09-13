@@ -1,6 +1,7 @@
 """Importing modules"""
 from datetime import datetime, date
 
+# pylint: disable = redefined-builtin
 
 #####
 #
