@@ -31,7 +31,7 @@ def test_generate_assessment():
     assessment = marking.generate_assessment()
     assert isinstance(assessment, Assessment)
     assert isinstance(assessment, MultipleChoiceAssessment)
-    assert assessment.name == "Maths Quiz"
+    assert assessment.assessment_name == "Maths Quiz"
     assert assessment.calculate_score() == 70
 
 
