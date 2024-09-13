@@ -14,19 +14,19 @@ def run_before_and_after_tests(tmpdir):
 
 def test_assessment_multiple_choice():
     assessment = MultipleChoiceAssessment("Python Basics", 21)
-    assert assessment.name == "Python Basics"
+    assert assessment.assessment_name == "Python Basics"
     assert assessment.calculate_score() == 14.7
 
 
 def test_assessment_technical():
     assessment = TechnicalAssessment("Python Basics", 20)
-    assert assessment.name == "Python Basics"
+    assert assessment.assessment_name == "Python Basics"
     assert assessment.calculate_score() == 20.0
 
 
 def test_assessment_presentation():
     assessment = PresentationAssessment("Python Basics", 20)
-    assert assessment.name == "Python Basics"
+    assert assessment.assessment_name == "Python Basics"
     assert assessment.calculate_score() == 12.0
 
 

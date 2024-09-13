@@ -1,14 +1,17 @@
+"""Importing modules"""
 from datetime import datetime, date
 
 VALID_TYPES = ["multiple-choice", "technical", "presentation"]
+
+# pylint: disable=too-few-public-methods
 
 
 class Assessment:
     """A class representing assessments for trainees."""
 
-    def __init__(self, name: str, type: str, score: float) -> None:
+    def __init__(self, assessment_name: str, type: str, score: float) -> None:
         """Initialises an assessment name, type and score."""
-        self.name = name
+        self.assessment_name = assessment_name
         self.type = type
         self.score = score
 
@@ -23,12 +26,12 @@ class Assessment:
 class Trainee:
     """A class representing a trainee."""
 
-    def __init__(self, name: str, email: str, date_of_birth: date, assessments: list[Assessment]) -> None:
+    def __init__(self, name: str, email: str, date_of_birth: date) -> None:
         """Initialises a trainee's name, email, date of birth and list of assessments."""
         self.name = name
         self.email = email
         self.date_of_birth = date_of_birth
-        self.assessments = assessments
+        self.assessments = []
 
     def get_age(self) -> int:
         """Calculates and returns the age of a trainee in years."""
@@ -46,7 +49,7 @@ class Trainee:
     def get_assessment(self, name: str):
         """Returns an assessment object."""
         for assessment in self.assessments:
-            if assessment.name == name:
+            if assessment.assessment_name == name:
                 return assessment
         return None
 
